@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="ar">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,118 +8,100 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-   <header class="site-header">
-      <div class="nav-container">
-        <nav>
-          <div class="logo">
-            مكتب روائع البيان للعقار
-          </div>
-          <ul class="nav-links">
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">خدماتنا</a></li>
-            <li><a href="#">من نحن</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header class="site-header">
+        <div class="nav-container">
+            <div class="logo">مكتب روائع البيان</div>
+            <nav class="nav-links">
+                <a href="#">الرئيسية</a>
+                <a href="#">خدماتنا</a>
+                <a href="#">من نحن</a>
+                <a href="#">تواصل معنا</a>
+            </nav>
+            <button class="hamburger-menu" id="hamburger-menu">☰</button>
+        </div>
     </header>
 
-    <div class="hero-section">
-        <div class="text-content"> 
-            <h1 class="main-heading">استثمارك الأمثل يبدأ من هنا</h1>
-            <p class="main-paragraph">خبراؤنا يجدون لك أفضل الفرص العقارية التي تلبي طموحاتك.</p>
-            <a href="#" class="cta-button">تصفح العروض</a>
-        </div>
-        <div class="image-content">
-            <img src="image.png" alt="شعار لمكتب عقاري" width="350">
-        </div>
-    </div>
-    
-    <hr>
+    <main>
+        <section class="hero-section" data-aos="fade-in">
+            <div class="text-content">
+                <h1 class="main-heading">استثمارك الأمثل يبدأ من هنا</h1>
+                <p class="main-paragraph">خبراؤنا يجدون لك أفضل الفرص العقارية التي تلبي طموحاتك.</p>
+                <a href="#" class="cta-button">تصفح العروض</a>
+            </div>
+            <div class="image-content">
+                <img src="image.png" alt="شعار لمكتب عقاري">
+            </div>
+        </section>
 
-    <div class="services-section">
+        <section class="services-section">
+            <h2 class="section-title" data-aos="fade-up">خدماتنا</h2>
+            <div class="service-container">
+                <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                    <h3>تسويق رقمي</h3>
+                    <p>نحن نساعدك على الوصول لجمهورك عبر الإنترنت.</p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                    <h3>الوساطة العقارية</h3>
+                    <p>نقوم باستخراج عقود الوساطه مجانا للملاك </p>
+                </div>
+                <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                    <h3>إدارة حسابات</h3>
+                    <p>ندير حسابات التواصل الاجتماعي باحترافية.</p>
+                </div>
+            </div>
+        </section>
 
-      <h2 class="section-title">خدماتنا</h2>
+        <section class="testimonials-section">
+            <h2 class="section-title" data-aos="fade-up">ماذا يقول عملاؤنا</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <p class="testimonial-text">"لم أكن أتوقع هذا المستوى من الاحترافية والسرعة في إيجاد العقار المناسب."</p>
+                    <p class="client-name">- عبدالله الراجحي</p>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <p class="testimonial-text">"كانت تجربتي معهم ممتازة من البداية للنهاية. شفافية ومصداقية في العروض."</p>
+                    <p class="client-name">- سارة الأحمدي</p>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <p class="testimonial-text">"أفضل خدمة عملاء تعاملت معها في السوق العقاري. فريق متعاون جداً."</p>
+                    <p class="client-name">- محمد الغامدي</p>
+                </div>
+            </div>
+        </section>
 
-      <div class="service-container">
-        <div class="service-box">
-          <h3>تسويق رقمي</h3>
-          <p>نحن نساعدك علي الوصول لجمهورك عبر الانترنت.</p>
-        </div>
-        <div class="service-box">
-          <h3>بناء مواقع</h3>
-          <p>نقوم ببناء مواقع سريعه ومتجاوبة.</p>
-        </div>
-        <div class="service-box">
-          <h3>اداره حسابات</h3>
-          <p>ندير حسابات التواصل الاجتماعي باحترافية.</p>
-        </div>
-      </div>
-
-    </div>
+        <section class="cta-section" data-aos="zoom-in">
+            <h2>هل أنت جاهز للاستثمار في عقارك القادم؟</h2>
+            <p>تواصل مع فريق خبرائنا اليوم لمساعدتك في إيجاد أفضل الفرص.</p>
+            <a href="#" class="cta-button">تواصل معنا الآن</a>
+        </section>
+    </main>
 
     <footer>
-      <p>جميع الحقوق محفوظة © 2025 روائع البيان العقارية</p>
-      <section class="testimonials-section">
-      <h2 class="section-title">ماذا يقول عملاؤنا</h2>
-      <div class="testimonial-container">
-        
-        <div class="testimonial-card">
-          <p class="testimonial-text">"لم أكن أتوقع هذا المستوى من الاحترافية والسرعة في إيجاد العقار المناسب. شكراً لفريق النجم العقارية."</p>
-          <p class="client-name">عبدالله الراجحي</p>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-text">"كانت تجربتي معهم ممتازة من البداية للنهاية. شفافية في التعامل ومصداقية في العروض المقدمة."</p>
-          <p class="client-name">سارة الأحمدي</p>
-        </div>
-
-        <div class="testimonial-card">
-          <p class="testimonial-text">"أفضل خدمة عملاء تعاملت معها في السوق العقاري. فريق متعاون جداً ويستمع لاحتياجاتك بدقة."</p>
-          <p class="client-name">محمد الغامدي</p>
-        </div>
-
-      </div>
-    </section>
-
-      <div class="cta-section">
-        <h2>هل انت جاهز للاستثمار في عقارك القادم؟</h2>
-        <p>تواصل مع فريق خبرائنا اليوم لمساعدتك في إيجاد افضل الفرص</p>
-         <a href="#" class="cta-button">تواصل معنا الان</a>
-
-      </div>
+        <p>جميع الحقوق محفوظة © 2025 مكتب روائع البيان للعقار</p>
     </footer>
 
-    <script>
-      const themeButton = document.querySelector('.cta-button');
-      const body = document.body;
-
-      themeButton.addEventListener('click', function(event) {
-        event.preventDefault(); // منع الزر من تحديث الصفحة
-        body.classList.toggle('dark-mode');
-
-        if (body.classList.contains('dark-mode')) {
-          localStorage.setItem('theme', 'dark');
-        } else {
-          localStorage.setItem('theme', 'light');
-        }
-      });
-
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        body.classList.add('dark-mode');
-      }
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
+    <script>
+        // تفعيل مكتبة الحركات
+        AOS.init({
+            duration: 800, // مدة الحركة بالمللي ثانية
+            once: true, // الحركة تحدث مرة واحدة فقط
+        });
+
+        // تشغيل قائمة الهامبرغر في الجوال
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
