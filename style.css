@@ -1,0 +1,237 @@
+/* === إعدادات أساسية وتطبيق الخط الجديد === */
+/* ========== شريط التصفح العلوي ========== */
+.site-header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px 0;
+  position: sticky; /* يجعل الشريط يثبت في الأعلى عند التمرير */
+  top: 0;
+  z-index: 1000; /* يضمن بقاء الشريط فوق كل العناصر الأخرى */
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* يضع الشعار في جهة والروابط في الجهة المقابلة */
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700; /* خط عريض */
+  font-size: 24px;
+  color: #0d214d; /* اللون الأزرق الداكن */
+}
+
+.nav-links {
+  list-style: none; /* إزالة النقاط من القائمة */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px; /* مسافة بين الروابط */
+}
+
+.nav-links a {
+  text-decoration: none; /* إزالة الخط تحت الرابط */
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #d6ba1d; /* تغيير اللون إلى الذهبي عند مرور الماوس */
+}
+
+/* ========== قسم الترحيب الرئيسي (Hero) ========== */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background-color: white;
+}
+body {
+    font-family: 'Cairo', sans-serif; /* تطبيق الخط الجديد على كل الصفحة */
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* ضمان أن اتجاه الصفحة من اليمين لليسار */
+    background-color: #f8f9fa; /* خلفية رمادية فاتحة جداً وأنيقة */
+}
+
+/* === الجزء العلوي (Hero Section) === */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 80px; /* زيادة المساحات لإعطاء إحساس بالراحة */
+    background-color: white;
+}
+
+.text-content {
+    max-width: 50%; /* تحديد عرض المحتوى النصي */
+}
+
+.main-heading {
+    font-size: 48px;
+    font-weight: 700; /* وزن أثقل للخط */
+    color: #0d214d; /* أزرق داكن جداً يوحي بالثقة */
+    margin-bottom: 15px;
+}
+
+.main-paragraph { /* أضفنا كلاس جديد للفقرة لتنسيقها */
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6; /* زيادة المسافة بين السطور لتسهيل القراءة */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #d6ba1d; /* اللون الذهبي المميز */
+    color: #0d214d; /* لون النص أزرق داكن */
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700; /* استخدام الوزن الثقيل للخط */
+    margin-top: 20px;
+    transition: background-color 0.3s; /* حركة ناعمة عند مرور الماوس */
+}
+
+.cta-button:hover {
+    background-color: #c5a81a; /* درجة أغمق قليلاً من الذهبي عند المرور */
+}
+
+.image-content {
+    border-radius: 15px; /* تنعيم حواف الصورة */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* ظل ناعم لإعطاء عمق للصورة */
+}
+
+/* === قسم الخدمات === */
+.services-section {
+    padding: 80px 30px; /* مساحات أكبر */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #0d214d; /* توحيد لون العناوين الرئيسية */
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* أفضل من استخدام الهوامش لتوزيع المسافات */
+}
+
+.service-box {
+    width: 30%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* ظل خفيف جداً */
+    transition: transform 0.3s; /* حركة ناعمة عند المرور */
+}
+
+.service-box:hover {
+    transform: translateY(-10px); /* الصندوق يرتفع قليلاً عند المرور عليه */
+}
+
+.service-box h3 {
+    color: #d6ba1d; /* عنوان الخدمة باللون الذهبي */
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* === الفوتر (الجزء السفلي) === */
+footer {
+    background-color: #0d214d; /* أزرق داكن */
+    color: #f8f9fa; /* أبيض مائل للرمادي */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* === تعديلات الجوال (تبقى كما هي فهي ممتازة) === */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+}
+/* ========== تنسيق قسم دعوة لاتخاذ إجراء (CTA) ========== */
+.cta-section {
+  background-color: #0d214d; /* خلفية باللون الأزرق الداكن للفت الانتباه */
+  color: white; /* نص أبيض ليكون واضحاً */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  font-size: 18px;
+  max-width: 600px; /* حتى لا يكون النص عريضاً جداً */
+  margin: 0 auto 30px auto; /* توسيط الفقرة تلقائياً */
+}
+/* ========== قسم آراء العملاء (Testimonials) ========== */
+.testimonials-section {
+  background-color: #f8f9fa; /* خلفية بلون رمادي خفيف لتمييز القسم */
+  padding: 80px 30px;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px; /* مسافة بين كروت الشهادات */
+  flex-wrap: wrap; /* للسماح للكروت بالنزول لسطر جديد في الشاشات الصغيرة */
+}
+
+.testimonial-card {
+  background-color: white;
+  width: 30%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  border-top: 5px solid #d6ba1d; /* لمسة جمالية باللون الذهبي في الأعلى */
+}
+
+.testimonial-text {
+  font-style: italic; /* لجعل النص يبدو كاقتباس */
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.client-name {
+  font-weight: 700;
+  color: #0d214d; /* اللون الأزرق الداكن لاسم العميل */
+  text-align: left; /* محاذاة الاسم لليسار لمظهر أنيق */
+}
