@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -20,9 +22,9 @@
             <div class="logo">مكتب روائع البيان</div>
             <nav class="nav-links">
                 <a href="#">الرئيسية</a>
-                <a href="#">خدماتنا</a>
-                <a href="#">من نحن</a>
-                <a href="#">تواصل معنا</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#about">من نحن</a>
+                <a href="https://wa.me/966539125233">تواصل معنا</a>
             </nav>
             <button class="hamburger-menu" id="hamburger-menu">☰</button>
         </div>
@@ -33,30 +35,41 @@
             <div class="text-content">
                 <h1 class="main-heading">استثمارك الأمثل يبدأ من هنا</h1>
                 <p class="main-paragraph">خبراؤنا يجدون لك أفضل الفرص العقارية التي تلبي طموحاتك.</p>
-                <a href="#" class="cta-button">تصفح العروض</a>
+                <a href="offers.html" class="cta-button">تصفح العروض</a>
             </div>
             <div class="image-content">
                 <img src="image.png" alt="شعار لمكتب عقاري">
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section"id="services">
             <h2 class="section-title" data-aos="fade-up">خدماتنا</h2>
             <div class="service-container">
                 <div class="service-box" data-aos="fade-up" data-aos-delay="100">
-                    <h3>تسويق رقمي</h3>
-                    <p>نحن نساعدك على الوصول لجمهورك عبر الإنترنت.</p>
+                    <h3>تسويق وإدارة العقارات</h3>
+                    <p>نقدم خططاً تسويقية مبتكرة لعقارك، من التصوير الاحترافي وتصميم الإعلانات الجذابة إلى النشر على أوسع نطاق للوصول إلى أفضل المشترين.</p>
                 </div>
                 <div class="service-box" data-aos="fade-up" data-aos-delay="200">
-                    <h3>الوساطة العقارية</h3>
-                    <p>نقوم باستخراج عقود الوساطه مجانا للملاك </p>
+                    <h3>البحث عن عقار وتملّك</h3>
+                    <p>سواء كنت تبحث عن منزل أحلامك أو فرصة استثمارية، فريقنا المتخصص يبحث بالنيابة عنك ليوفر عليك الوقت والجهد، ويقدم لك قائمة مختارة من أفضل العقارات التي تطابق تماماً متطلباتك وميزانيتك.</p>
                 </div>
                 <div class="service-box" data-aos="fade-up" data-aos-delay="300">
-                    <h3>إدارة حسابات</h3>
-                    <p>ندير حسابات التواصل الاجتماعي باحترافية.</p>
+                    <h3>الاستشارات والخدمات المساندة</h3>
+                    <p>نوفر لك استشارات عقارية احترافية مبنية على خبرة عميقة بالسوق لمساعدتك على اتخاذ قرارات سليمة. كما نسهل عليك الإجراءات بتقديم خدمة إصدار عقود الوساطة وتراخيص الإعلانات بشكل مجاني.</p>
                 </div>
             </div>
         </section>
+
+        <section class="about-us-section" id="about">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">من نحن</h2>
+        <p data-aos="fade-up" data-aos-delay="100">
+            مكتب روائع البيان هو شريكك الموثوق في عالم العقار. بخبرتنا الطويلة وفريقنا المحترف، نسعى لتقديم حلول عقارية مبتكرة تلبي طموحات عملائنا. نحن ملتزمون بأعلى معايير الشفافية والمصداقية.
+            <br><br>
+            <strong>رقم رخصة الهيئة العامة للعقار:</strong> 1100112535
+        </p>
+    </div>
+</section>
 
         <section class="testimonials-section">
             <h2 class="section-title" data-aos="fade-up">ماذا يقول عملاؤنا</h2>
@@ -79,7 +92,7 @@
         <section class="cta-section" data-aos="zoom-in">
             <h2>هل أنت جاهز للاستثمار في عقارك القادم؟</h2>
             <p>تواصل مع فريق خبرائنا اليوم لمساعدتك في إيجاد أفضل الفرص.</p>
-            <a href="#" class="cta-button">تواصل معنا الآن</a>
+            <a href="https://wa.me/966539125233" class="cta-button">تواصل معنا الآن</a>
         </section>
     </main>
 
@@ -103,5 +116,8 @@
             navMenu.classList.toggle('active');
         });
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>

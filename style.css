@@ -124,6 +124,18 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
+.about-us-section {
+    padding: 80px 30px;
+    background-color: var(--white-color); /* أو يمكنك استخدام var(--light-bg-color) */
+    text-align: center;
+}
+.about-us-section p {
+    max-width: 800px;
+    margin: 0 auto; /* لتوسيط الفقرة */
+    line-height: 1.8;
+    font-size: 18px;
+}
+
 /* ============================ */
 /* === قسم الخدمات والآراء === */
 /* ============================ */
@@ -260,4 +272,30 @@ footer {
         width: 100%;
         max-width: 350px;
     }
+}
+.listings-page-section {
+    padding: 80px 30px;
+}
+
+.listings-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* المسافة بين بطاقات العروض */
+}
+
+.listing-cta-button {
+    display: inline-block;
+    background-color: #25D366; /* لون الواتساب الأخضر */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+}
+
+.listing-cta-button:hover {
+    transform: scale(1.05); /* يكبر قليلاً عند مرور الماوس */
 }
