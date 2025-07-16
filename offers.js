@@ -31,7 +31,7 @@ if (listingsContainer) {
 
     listingsData.forEach(listing => {
         // الرقم الخاص بك مع رمز الدولة بدون +
-        const whatsappNumber = '966539125233'; // <== لا تنسَ وضع رقمك الصحيح هنا
+        const whatsappNumber = '966558666445'; // <== لا تنسَ وضع رقمك الصحيح هنا
         
         // رسالة جاهزة عند فتح الواتساب
         const whatsappMessage = `مرحباً، أنا مهتم بالعرض التالي: ${listing.title}`;
